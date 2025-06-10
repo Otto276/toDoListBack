@@ -6,7 +6,6 @@ export const createItemSchema = Joi.object({
   completed: Joi.boolean().optional(),
   image: Joi.any().meta({ swaggerType: 'file' }).optional(),
   audio: Joi.any().meta({ swaggerType: 'file' }).optional()
-
 });
 
 export const updateItemSchema = Joi.object({
@@ -15,5 +14,4 @@ export const updateItemSchema = Joi.object({
   completed: Joi.boolean().optional(),
   image: Joi.any().meta({ swaggerType: 'file' }).optional(),
   audio: Joi.any().meta({ swaggerType: 'file' }).optional()
-
 });

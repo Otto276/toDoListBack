@@ -131,6 +131,7 @@ export const itemRoutes: ServerRoute[] = [
       const updateData: any = {
         name: payload.name,
         description: payload.description,
+        completed: payload.completed === true || payload.completed === 'true'
       };
 
       try {
